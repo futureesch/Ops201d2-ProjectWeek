@@ -40,6 +40,13 @@ AOE protocol - BIOS thinks there's an additional disk in the system - hands off 
 (drop a table in base memory for MAC address and other basic info) to mount the drive.
 Great question asked at minute 38 RE: Scaling up. TCP stacks are much better than tftp
 (SLAM) Scalable Local Area Multicast - 16,000+ machines from one server took about 30 minutes
+PXE chainloading - instead of 2nd stage loader NBP - as gPXE (kills old PXE) to get the features of access of gPXE
+gpxelinux.0 - gpxe | pxelinux.0
+TCP/IP stack 
+
+Demo 2 - @51 min mark - Syslinux PXE Knife
+GUI interface - Virtualized Booting!
+
 
 https://www.youtube.com/watch?v=GofOqhO6VVM
 
