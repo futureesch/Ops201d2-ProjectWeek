@@ -44,19 +44,25 @@ PXE chainloading - instead of 2nd stage loader NBP - as gPXE (kills old PXE) to 
 gpxelinux.0 - gpxe | pxelinux.0
 TCP/IP stack 
 
+https://ipxe.org/
+https://ipxe.org/download - HELPFUL for technical completion!
+
 Demo 2 - @51 min mark - Syslinux PXE Knife
 GUI interface - Virtualized Booting!
+HTTP is a "windowed" protcol - .cgi 
+iSCSI - SCSI over TCI/IP, routeable, windowed, "hideously complicated"... allows you to treat a remote disk as a local disk!
+GDP - like 'nano' a way to get into the code of the boot up to analyze network problems at the code level for debugging
+to see packets, sizes, where they are going to be; first 6 bytes is the MAC address
+gPXE can run over USB adapters
+
+
+ 
+
 
 
 https://www.youtube.com/watch?v=GofOqhO6VVM
 
 
-
-
-
-
-https://ipxe.org/
-https://ipxe.org/download - HELPFUL for technical completion!
 
 
 
