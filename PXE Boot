@@ -31,9 +31,15 @@ Stage Loader Network Boot Programmer (NBP)
 Option ROMs (MB, or Ethernet Card)
 DHCP - Filename loads NBP - Kernel, Init
 PXE is industry standard
-
 Etherboot required rom-o-matic.net - Boot Image Vending Machine
 
-TCP - 
+Demo 1 starts at - 30 minute mark
+Boot using something other than TFTP
+Working over HTTP frees you from the subnet - boot from a URL
+AOE protocol - BIOS thinks there's an additional disk in the system - hands off from PXE to Windows loads AOE driver
+(drop a table in base memory) to mount the drive.
+Great question asked at minute 38 RE: Scaling up.
+
+
 
 https://www.youtube.com/watch?v=GofOqhO6VVM
