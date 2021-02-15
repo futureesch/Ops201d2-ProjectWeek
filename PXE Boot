@@ -1,0 +1,39 @@
+PXE Boot Basics.
+
+Booting from the network using the PXE protocol involves a simple series of DHCP packets. There are three parties involved: the DHCP server, the PXE server, and the client.
+
+1. The client broadcasts a DHCP packet asking for the address of DHCP servers (servers that can hand out IP addresses). In the same packet, the client also specifies that it is looking for PXE (network boot) servers. This is known as a 'discover' - the client wants to discover where the servers are.
+2. The DHCP server responds with a broadcast packet (which simply tells the client that it is an address server). This is known as an 'offer' - the server is offering its services.
+3. The PXE server responds (which tells the client that it is a boot server). This is also known as an 'offer.'
+4. The client sends the DHCP server a message asking for an IP address.
+5. The DHCP server sends the client an IP address that is now assigned to it.
+6. The clients sends the PXE server a request asking for the path to the Network Boot Program (NBP).
+7. The PXE server responds with the NBP path.
+8. The client downloads the NBP and runs it.
+
+https://techcommunity.microsoft.com/t5/configuration-manager-blog/you-want-to-pxe-boot-don-t-use-dhcp-options/ba-p/275562
+
+When using PXE the boot process is changed from the normal order to:
+
+Power on –> BIOS –> Network Card’s PXE stack –> Network Boot Program (NBP) downloaded using TFTP from server to Client’s RAM –> NBP’s responsibility to perform the next step (a.k.a. 2nd stage boot).
+
+https://www.howtogeek.com/57601/what-is-network-booting-pxe-and-how-can-you-use-it/
+
+gPXE: Modern FSS Networking Booting
+
+Marty Conner - Micahel Brown - H. Peter Anvin
+
+History:
+PXE is the BIOS component (Boot from LAN) 
+PXE Linux originated in 1999 - Awful standards in booting are better than no standard at all.
+WFM - Preboot Execution Environment
+Stage Loader Network Boot Programmer (NBP)
+Option ROMs (MB, or Ethernet Card)
+DHCP - Filename loads NBP - Kernel, Init
+PXE is industry standard
+
+Etherboot required rom-o-matic.net - Boot Image Vending Machine
+
+TCP - 
+
+https://www.youtube.com/watch?v=GofOqhO6VVM
