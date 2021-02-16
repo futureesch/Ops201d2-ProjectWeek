@@ -53,7 +53,7 @@ install_hubspot(){
     sudo npm install -g @hubspot/cli@latest
 }
 
-#yes | install_hubspot
+#yes | install_hubspot - I think this may not be needed here for the engineers since this is their CRM - this belongs in PowerShell as part of the powershell script setup - the partner to what you've done.
 
 
 #install slack can't get desktop to open. Needs work
