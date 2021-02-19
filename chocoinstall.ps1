@@ -11,3 +11,5 @@ choco upgrade brave -y
 choco install slack -y
 
 choco upgrade slack -y
+
+Start-Process -FilePath 'C:\Program Files\Slack\Slack.exe'
