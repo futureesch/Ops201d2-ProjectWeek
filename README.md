@@ -9,7 +9,3 @@ Major Client Requests:
 --AWS Cloud EC2 instances for non PXE-Boot users
 --Windows and Linux OS customization with scaling automation
 
-My contributions:
---PXE-Boot research
---Windows EC2 Instance imaging to include software requests
---Powershell Debloater and customizer 
